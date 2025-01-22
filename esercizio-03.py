@@ -1,27 +1,44 @@
+# ------------------------- #
+# Baricentro di un quadrato #
+# ------------------------- #
 import turtle
 
-t = turtle.Turtle()
-t.shape('turtle')
+tom = turtle.Turtle()
+tom.shape('turtle')
 
-# Questa funzione costruisce un quadrato
-def quadrato(tartaruga, lato):
+lato = 200
+
+# ------------------------------------------------- #
+# 'def' introduce una funzione dal nome quadrato(). # 
+# La funzione accetta due valori in ingresso:       #
+# - il nome della tartaruga 'n'                     #
+# - la lunghezza del lato 'l'                       #
+# e restituisce il disegno del quadrato.            #
+# ------------------------------------------------- #
+def quadrato(n, l):
     for _ in range(4):
-        tartaruga.forward(lato)
-        tartaruga.right(90)
-        
-t.left(60)
-t.forward(200)
-t.right(120)
-t.forward(200)
-t.right(30)
+        n.forward(l)
+        n.right(90)
 
-quadrato(t, 200)
+# Costruzione del "tetto"
+tom.left(60)
+tom.forward(lato)
+tom.right(120)
+tom.forward(lato)
+tom.right(30)
 
-t.forward(200)
-t.right(90)
-t.forward(200/3)
-t.right(90)
-t.forward(50)
-t.circle(200/6, 180)
-t.forward(50)
-t.hideturtle()
+quadrato(tom, 200)
+tom.hideturtle()
+
+# ----------------------------------------------- #
+# La parte di codice che segue serve a  disegnare #
+# una porta e non necessaria per soddisfare le    #
+# richieste dell'esercizio                        #
+# ----------------------------------------------- #
+tom.forward(200)
+tom.right(90)
+tom.forward(200/3)
+tom.right(90)
+tom.forward(50)
+tom.circle(200/6, 180)
+tom.forward(50)
