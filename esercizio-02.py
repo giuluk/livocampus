@@ -22,12 +22,11 @@ def quadrato(n, l):
         n.left(90)
         
 quadrato(tom, lato)
+tom.penup()
 
 # La lunghezza della diagonale di un quadrato è 
 # data dal prodotto del lato per la radice di 2
-diagonale = lato * sqrt(2) 
-
-tom.penup()
+diagonale = lato * sqrt(2)
 
 tom.left(45)
 # Il baricentro è nel punto medio
