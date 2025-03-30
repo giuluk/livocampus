@@ -1,6 +1,6 @@
 # ------------------------------ #
 # Triangolo equilatero inscritto #
-# in una circonferenza v.1.0     #
+# a una circonferenza v.1.0     #
 # ------------------------------ #
 import turtle
 from math import sqrt # sqrt() è una funzione per radice quadrata
